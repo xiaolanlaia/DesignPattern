@@ -39,6 +39,15 @@ import com.example.designpattern.commandPattern.learn.Invoker;
 import com.example.designpattern.commandPattern.learn.Receiver;
 import com.example.designpattern.compositePattern.Composite;
 import com.example.designpattern.compositePattern.Leaf;
+import com.example.designpattern.decorator.example.Circle;
+import com.example.designpattern.decorator.example.Rectangle;
+import com.example.designpattern.decorator.example.RedShapedDecorator;
+import com.example.designpattern.decorator.example.Shape;
+import com.example.designpattern.decorator.example.ShapeDecorator;
+import com.example.designpattern.decorator.learn.Component;
+import com.example.designpattern.decorator.learn.ConcreteComponent;
+import com.example.designpattern.decorator.learn.ConcreteDecoratorA;
+import com.example.designpattern.decorator.learn.Decorator;
 import com.example.designpattern.interpreterPattern.Expression;
 import com.example.designpattern.interpreterPattern.InterpreterPattern;
 import com.example.designpattern.mediator.exam.User;
@@ -131,6 +140,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button adapter_pattern;
     @BindView(R.id.adapter_pattern_example)
     Button adapter_pattern_example;
+    @BindView(R.id.decorate_pattern)
+    Button decorate_pattern;
+    @BindView(R.id.decorate_pattern_example)
+    Button decorate_pattern_example;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -171,6 +184,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         composite_pattern_example.setOnClickListener(this);
         adapter_pattern.setOnClickListener(this);
         adapter_pattern_example.setOnClickListener(this);
+        decorate_pattern.setOnClickListener(this);
+        decorate_pattern_example.setOnClickListener(this);
     }
 
 
@@ -453,6 +468,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 audioPlayer.play("mp4","alone.mp4");
                 audioPlayer.play("vlc","far far away.vlc");
                 audioPlayer.play("avi","mind me.avi");
+                break;
+            }
+            case R.id.decorate_pattern : {
+                Component component = new ConcreteComponent();
+                Decorator decorator = new ConcreteDecoratorA(component);
+                decorator.operate();
+
+                break;
+            }
+            case R.id.decorate_pattern_example : {
+                Shape circle = new Circle();
+                ShapeDecorator redCircle = new RedShapedDecorator(new Circle());
+                ShapeDecorator redRectangle = new RedShapedDecorator(new Rectangle());
+
+                System.out.println("Circle with normal border");
+                circle.draw();
+
+                System.out.println("\nCircle of red border");
+                redCircle.draw();
+                System.out.println("\nRectangle of red border");
+                redRectangle.draw();
                 break;
             }
         }
