@@ -336,6 +336,23 @@
                 android:layout_height="?attr/actionBarSize"/>
 
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+            <Button
+                android:id="@+id/flyweight_pattern"
+                android:text="flyweight_pattern"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"/>
+            <Button
+                android:id="@+id/flyweight_pattern_example"
+                android:text="example 1"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"/>
+
+        </LinearLayout>
 
 
     </LinearLayout>

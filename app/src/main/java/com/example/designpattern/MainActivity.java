@@ -48,6 +48,8 @@ import com.example.designpattern.decorator.learn.Component;
 import com.example.designpattern.decorator.learn.ConcreteComponent;
 import com.example.designpattern.decorator.learn.ConcreteDecoratorA;
 import com.example.designpattern.decorator.learn.Decorator;
+import com.example.designpattern.flyweightPattern.Ticket;
+import com.example.designpattern.flyweightPattern.TicketFactory;
 import com.example.designpattern.interpreterPattern.Expression;
 import com.example.designpattern.interpreterPattern.InterpreterPattern;
 import com.example.designpattern.mediator.exam.User;
@@ -144,6 +146,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button decorate_pattern;
     @BindView(R.id.decorate_pattern_example)
     Button decorate_pattern_example;
+    @BindView(R.id.flyweight_pattern)
+    Button flyweight_pattern;
+    @BindView(R.id.flyweight_pattern_example)
+    Button flyweight_pattern_example;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -186,6 +192,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         adapter_pattern_example.setOnClickListener(this);
         decorate_pattern.setOnClickListener(this);
         decorate_pattern_example.setOnClickListener(this);
+        flyweight_pattern.setOnClickListener(this);
+        flyweight_pattern_example.setOnClickListener(this);
     }
 
 
@@ -489,6 +497,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 redCircle.draw();
                 System.out.println("\nRectangle of red border");
                 redRectangle.draw();
+                break;
+            }
+            case R.id.flyweight_pattern : {
+                Ticket ticket = TicketFactory.getTicket("北京","青岛");
+                ticket.showTicketInfo("上铺");
+                Ticket ticket1 = TicketFactory.getTicket("北京","青岛");
+                ticket1.showTicketInfo("下铺");
+                Ticket ticket2 = TicketFactory.getTicket("北京","青岛");
+                ticket2.showTicketInfo("坐票");
+                break;
+            }
+            case R.id.flyweight_pattern_example : {
+
                 break;
             }
         }
