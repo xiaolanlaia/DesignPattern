@@ -23,7 +23,9 @@ import com.example.designpattern.CreatePattern.FactoryPatternAbstract.FactoryCon
 import com.example.designpattern.CreatePattern.FactoryPatternAbstract.ProductAAbstract;
 import com.example.designpattern.CreatePattern.FactoryPatternAbstract.ProductBAbstract;
 import com.example.designpattern.StragetyPattern.learn.BusStrategy;
+import com.example.designpattern.StragetyPattern.learn.CarStrategy;
 import com.example.designpattern.StragetyPattern.learn.TrafficCalculator;
+import com.example.designpattern.adapterPattern.learn.VoltAdapter;
 import com.example.designpattern.chainPattern.ConcreteHandler1;
 import com.example.designpattern.chainPattern.ConcreteHandler2;
 import com.example.designpattern.commandPattern.exam.Broker;
@@ -34,6 +36,8 @@ import com.example.designpattern.commandPattern.learn.Command;
 import com.example.designpattern.commandPattern.learn.ConcreteCommand;
 import com.example.designpattern.commandPattern.learn.Invoker;
 import com.example.designpattern.commandPattern.learn.Receiver;
+import com.example.designpattern.compositePattern.Composite;
+import com.example.designpattern.compositePattern.Leaf;
 import com.example.designpattern.interpreterPattern.Expression;
 import com.example.designpattern.interpreterPattern.InterpreterPattern;
 import com.example.designpattern.mediator.exam.User;
@@ -41,6 +45,8 @@ import com.example.designpattern.memotoPattern.CallOfDuty;
 import com.example.designpattern.memotoPattern.Careteker;
 import com.example.designpattern.observerPattern.Coder;
 import com.example.designpattern.observerPattern.DevTechFrontier;
+import com.example.designpattern.proxyPattern.ProxySubject;
+import com.example.designpattern.proxyPattern.RealSubject;
 import com.example.designpattern.statePattern.TvController;
 import com.example.designpattern.templatePattern.AbstractComputer;
 import com.example.designpattern.templatePattern.CoderComputer;
@@ -53,7 +59,6 @@ import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -113,6 +118,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button mediator_pattern;
     @BindView(R.id.mediator_pattern_example)
     Button mediator_pattern_example;
+    @BindView(R.id.proxy_pattern)
+    Button proxy_pattern;
+    @BindView(R.id.proxy_pattern_example)
+    Button proxy_pattern_example;
+    @BindView(R.id.composite_pattern)
+    Button composite_pattern;
+    @BindView(R.id.composite_pattern_example)
+    Button composite_pattern_example;
+    @BindView(R.id.adapter_pattern)
+    Button adapter_pattern;
+    @BindView(R.id.adapter_pattern_example)
+    Button adapter_pattern_example;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -147,6 +164,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         visitor_pattern_example.setOnClickListener(this);
         mediator_pattern.setOnClickListener(this);
         mediator_pattern_example.setOnClickListener(this);
+        proxy_pattern.setOnClickListener(this);
+        proxy_pattern_example.setOnClickListener(this);
+        composite_pattern.setOnClickListener(this);
+        composite_pattern_example.setOnClickListener(this);
+        adapter_pattern.setOnClickListener(this);
+        adapter_pattern_example.setOnClickListener(this);
     }
 
 
@@ -224,8 +247,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
             case R.id.strategy_pattern : {
                 TrafficCalculator calculator = new TrafficCalculator();
-                calculator.setCalculateStrategy(new BusStrategy());
-                Log.d("__price",""+calculator.calculatePrice(16));
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        calculator.setCalculateStrategy(new BusStrategy());
+                        Log.d("__price-bus",""+calculator.calculatePrice(16));
+
+                    }
+                }).start();
+
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        calculator.setCalculateStrategy(new CarStrategy());
+                        Log.d("__price-car",""+calculator.calculatePrice(16));
+
+                    }
+                }).start();
                 break;
             }
             case R.id.strategy_pattern_example : {
@@ -364,6 +402,51 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             }
             case R.id.mediator_pattern_example : {
+
+
+                break;
+            }
+            case R.id.proxy_pattern : {
+                RealSubject realSubject = new RealSubject();
+                ProxySubject proxySubject = new ProxySubject(realSubject);
+                proxySubject.visit();
+
+                break;
+            }
+            case R.id.proxy_pattern_example : {
+
+
+                break;
+            }
+            case R.id.composite_pattern : {
+                Composite root = new Composite("Root");
+                Composite branch1 = new Composite("Branch1");
+                Composite branch2 = new Composite("branch2");
+
+                Leaf leaf1 = new Leaf("Leaf1");
+                Leaf leaf2 = new Leaf("leaf2");
+
+                branch1.addChild(leaf1);
+                branch2.addChild(leaf2);
+
+                root.addChild(branch1);
+                root.addChild(branch2);
+
+                root.doSomething();
+
+                break;
+            }
+            case R.id.composite_pattern_example : {
+
+
+                break;
+            }
+            case R.id.adapter_pattern : {
+                VoltAdapter adapter = new VoltAdapter();
+                Log.d("__adapter",""+adapter.getVolt5());
+                break;
+            }
+            case R.id.adapter_pattern_example : {
 
 
                 break;

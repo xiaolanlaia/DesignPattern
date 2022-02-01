@@ -265,6 +265,60 @@
 
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+            <Button
+                android:id="@+id/proxy_pattern"
+                android:text="proxy_pattern"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"/>
+            <Button
+                android:id="@+id/proxy_pattern_example"
+                android:text="example 1"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+            <Button
+                android:id="@+id/composite_pattern"
+                android:text="composite_pattern"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"/>
+            <Button
+                android:id="@+id/composite_pattern_example"
+                android:text="example 1"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+            <Button
+                android:id="@+id/adapter_pattern"
+                android:text="adapter_pattern"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"/>
+            <Button
+                android:id="@+id/adapter_pattern_example"
+                android:text="example 1"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"/>
+
+        </LinearLayout>
+
 
     </LinearLayout>
 </ScrollView>
