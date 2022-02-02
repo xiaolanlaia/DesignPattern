@@ -48,6 +48,7 @@ import com.example.designpattern.decorator.learn.Component;
 import com.example.designpattern.decorator.learn.ConcreteComponent;
 import com.example.designpattern.decorator.learn.ConcreteDecoratorA;
 import com.example.designpattern.decorator.learn.Decorator;
+import com.example.designpattern.facedPattern.MobilePhone;
 import com.example.designpattern.flyweightPattern.Ticket;
 import com.example.designpattern.flyweightPattern.TicketFactory;
 import com.example.designpattern.interpreterPattern.Expression;
@@ -150,6 +151,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button flyweight_pattern;
     @BindView(R.id.flyweight_pattern_example)
     Button flyweight_pattern_example;
+    @BindView(R.id.faced_pattern)
+    Button faced_pattern;
+    @BindView(R.id.faced_pattern_example)
+    Button faced_pattern_example;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -194,6 +199,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         decorate_pattern_example.setOnClickListener(this);
         flyweight_pattern.setOnClickListener(this);
         flyweight_pattern_example.setOnClickListener(this);
+        faced_pattern.setOnClickListener(this);
+        faced_pattern_example.setOnClickListener(this);
     }
 
 
@@ -509,6 +516,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             }
             case R.id.flyweight_pattern_example : {
+
+                break;
+            }
+            case R.id.faced_pattern : {
+                MobilePhone mobilePhone = new MobilePhone();
+                mobilePhone.takePicture();
+                mobilePhone.videoChat();
+                break;
+            }
+            case R.id.faced_pattern_example : {
 
                 break;
             }
