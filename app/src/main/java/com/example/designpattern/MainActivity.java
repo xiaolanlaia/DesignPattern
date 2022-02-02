@@ -27,6 +27,10 @@ import com.example.designpattern.StragetyPattern.learn.CarStrategy;
 import com.example.designpattern.StragetyPattern.learn.TrafficCalculator;
 import com.example.designpattern.adapterPattern.example.AudioPlayer;
 import com.example.designpattern.adapterPattern.learn.VoltAdapter;
+import com.example.designpattern.bridgePattern.example.CircleBridge;
+import com.example.designpattern.bridgePattern.example.GreenCircle;
+import com.example.designpattern.bridgePattern.example.RedCircle;
+import com.example.designpattern.bridgePattern.example.ShapeBridge;
 import com.example.designpattern.chainPattern.ConcreteHandler1;
 import com.example.designpattern.chainPattern.ConcreteHandler2;
 import com.example.designpattern.commandPattern.exam.Broker;
@@ -67,7 +71,6 @@ import com.example.designpattern.templatePattern.MilitaryComputer;
 import com.example.designpattern.visitorPattern.learn.BusinessReport;
 import com.example.designpattern.visitorPattern.learn.CEOVisitor;
 import com.example.designpattern.visitorPattern.learn.CTOVisitor;
-
 import java.util.ArrayList;
 
 import butterknife.BindView;
@@ -155,6 +158,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button faced_pattern;
     @BindView(R.id.faced_pattern_example)
     Button faced_pattern_example;
+    @BindView(R.id.bridge_pattern)
+    Button bridge_pattern;
+    @BindView(R.id.bridge_pattern_example)
+    Button bridge_pattern_example;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -201,6 +208,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         flyweight_pattern_example.setOnClickListener(this);
         faced_pattern.setOnClickListener(this);
         faced_pattern_example.setOnClickListener(this);
+        bridge_pattern.setOnClickListener(this);
+        bridge_pattern_example.setOnClickListener(this);
     }
 
 
@@ -527,6 +536,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
             case R.id.faced_pattern_example : {
 
+                break;
+            }
+            case R.id.bridge_pattern : {
+
+                break;
+            }
+            case R.id.bridge_pattern_example : {
+                ShapeBridge redCircle = new CircleBridge(100,100,10,new RedCircle());
+                ShapeBridge greenCircle = new CircleBridge(100,100,10,new GreenCircle());
+
+                redCircle.draw();
+                greenCircle.draw();
                 break;
             }
         }
