@@ -1,4 +1,4 @@
-package com.example.designpattern.ActionType.mediator.exam;
+package com.example.designpattern.ActionType.mediatorPattern.exam;
 
 import android.util.Log;
 

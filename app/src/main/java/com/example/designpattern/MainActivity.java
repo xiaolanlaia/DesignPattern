@@ -57,7 +57,7 @@ import com.example.designpattern.StructureType.flyweightPattern.Ticket;
 import com.example.designpattern.StructureType.flyweightPattern.TicketFactory;
 import com.example.designpattern.ActionType.interpreterPattern.Expression;
 import com.example.designpattern.ActionType.interpreterPattern.InterpreterPattern;
-import com.example.designpattern.ActionType.mediator.exam.User;
+import com.example.designpattern.ActionType.mediatorPattern.exam.User;
 import com.example.designpattern.ActionType.memotoPattern.CallOfDuty;
 import com.example.designpattern.ActionType.memotoPattern.Careteker;
 import com.example.designpattern.ActionType.observerPattern.Coder;

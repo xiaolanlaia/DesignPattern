@@ -1,4 +1,4 @@
-package com.example.designpattern.ActionType.mediator.learn;
+package com.example.designpattern.ActionType.mediatorPattern.learn;
 
 public abstract class Mediator {
     protected ConcreteColleagueA concreteColleagueA;
