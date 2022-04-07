@@ -1,4 +1,4 @@
-package com.example.designpattern.structureType.decoratorPattern.example;
+package com.example.designpattern.StructureType.decoratorPattern.example;
 
 public class RedShapedDecorator extends ShapeDecorator {
     public RedShapedDecorator(Shape decoratedShape) {

@@ -1,4 +1,4 @@
-package com.example.designpattern.structureType.decoratorPattern.learn;
+package com.example.designpattern.StructureType.decoratorPattern.learn;
 
 public class ConcreteDecoratorA extends Decorator {
     public ConcreteDecoratorA(Component component) {

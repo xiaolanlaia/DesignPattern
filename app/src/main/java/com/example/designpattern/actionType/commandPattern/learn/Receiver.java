@@ -1,4 +1,4 @@
-package com.example.designpattern.actionType.commandPattern.learn;
+package com.example.designpattern.ActionType.commandPattern.learn;
 
 import android.util.Log;
 

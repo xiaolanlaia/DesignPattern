@@ -1,4 +1,4 @@
-package com.example.designpattern.createType.BuilderPattern.learn;
+package com.example.designpattern.CreateType.BuilderPattern.learn;
 
 public class MacBook extends Computer{
     protected MacBook(){

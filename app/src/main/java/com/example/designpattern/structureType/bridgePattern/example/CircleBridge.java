@@ -1,4 +1,4 @@
-package com.example.designpattern.structureType.bridgePattern.example;
+package com.example.designpattern.StructureType.bridgePattern.example;
 
 public class CircleBridge extends ShapeBridge {
     private int x,y,radius;

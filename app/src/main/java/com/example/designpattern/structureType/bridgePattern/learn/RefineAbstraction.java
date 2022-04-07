@@ -1,4 +1,4 @@
-package com.example.designpattern.structureType.bridgePattern.learn;
+package com.example.designpattern.StructureType.bridgePattern.learn;
 
 public class RefineAbstraction extends Abstraction {
 

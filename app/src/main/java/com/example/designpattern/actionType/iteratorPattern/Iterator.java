@@ -1,4 +1,4 @@
-package com.example.designpattern.actionType.iteratorPattern;
+package com.example.designpattern.ActionType.iteratorPattern;
 
 public interface Iterator<T> {
     boolean hasNext();

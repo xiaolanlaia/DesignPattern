@@ -1,4 +1,4 @@
-package com.example.designpattern.actionType.commandPattern.exam;
+package com.example.designpattern.ActionType.commandPattern.exam;
 
 public class BuyStock implements Order {
     private Stock abcStock;

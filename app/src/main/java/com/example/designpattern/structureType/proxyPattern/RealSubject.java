@@ -1,4 +1,4 @@
-package com.example.designpattern.structureType.proxyPattern;
+package com.example.designpattern.StructureType.proxyPattern;
 
 import android.util.Log;
 

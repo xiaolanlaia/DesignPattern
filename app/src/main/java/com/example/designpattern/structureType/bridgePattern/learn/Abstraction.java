@@ -1,4 +1,4 @@
-package com.example.designpattern.structureType.bridgePattern.learn;
+package com.example.designpattern.StructureType.bridgePattern.learn;
 
 public abstract class Abstraction {
     private Implementor implementor;

@@ -1,4 +1,4 @@
-package com.example.designpattern.createType.BuilderPattern.example;
+package com.example.designpattern.CreateType.BuilderPattern.example;
 
 import android.text.TextUtils;
 import android.util.Log;

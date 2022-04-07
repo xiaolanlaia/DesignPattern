@@ -1,4 +1,4 @@
-package com.example.designpattern.createType.BuilderPattern.learn;
+package com.example.designpattern.CreateType.BuilderPattern.learn;
 
 public class MacBuilder extends Builder{
     private Computer mComputer = new MacBook();

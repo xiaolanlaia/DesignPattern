@@ -1,4 +1,4 @@
-package com.example.designpattern.actionType.StragetyPattern.learn;
+package com.example.designpattern.ActionType.StragetyPattern.learn;
 
 import android.util.Log;
 

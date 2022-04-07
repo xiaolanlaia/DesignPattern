@@ -1,4 +1,4 @@
-package com.example.designpattern.actionType.StragetyPattern.example;
+package com.example.designpattern.ActionType.StragetyPattern.example;
 
 public class BusinessDeal {
     BusinessStrategy businessStrategy;

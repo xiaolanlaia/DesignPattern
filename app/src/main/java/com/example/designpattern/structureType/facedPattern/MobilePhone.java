@@ -1,4 +1,4 @@
-package com.example.designpattern.structureType.facedPattern;
+package com.example.designpattern.StructureType.facedPattern;
 
 public class MobilePhone {
     private Phone phone = new PhoneImpl();

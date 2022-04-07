@@ -1,4 +1,4 @@
-package com.example.designpattern.actionType.mediatorPattern.learn;
+package com.example.designpattern.ActionType.mediatorPattern.learn;
 
 import android.util.Log;
 

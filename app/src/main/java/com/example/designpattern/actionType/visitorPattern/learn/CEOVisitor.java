@@ -1,4 +1,4 @@
-package com.example.designpattern.actionType.visitorPattern.learn;
+package com.example.designpattern.ActionType.visitorPattern.learn;
 
 import android.util.Log;
 

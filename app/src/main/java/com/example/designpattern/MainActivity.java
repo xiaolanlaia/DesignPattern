@@ -7,77 +7,78 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.designpattern.actionType.chainPattern.okHttpChain.InterceptorOne;
-import com.example.designpattern.actionType.chainPattern.okHttpChain.InterceptorTwo;
-import com.example.designpattern.actionType.chainPattern.okHttpChain.RealInterceptorChain;
-import com.example.designpattern.createType.BuilderPattern.example.TodayFool;
-import com.example.designpattern.createType.BuilderPattern.learn.Builder;
-import com.example.designpattern.createType.BuilderPattern.learn.Director;
-import com.example.designpattern.createType.BuilderPattern.learn.MacBuilder;
-import com.example.designpattern.createType.ClonePattern.WordDocument;
-import com.example.designpattern.createType.FactoryPattern.example.Animal;
-import com.example.designpattern.createType.FactoryPattern.example.FactoryAnimal;
-import com.example.designpattern.createType.FactoryPattern.example.FactoryAnimalConcrete;
-import com.example.designpattern.createType.FactoryPattern.learn.Factory;
-import com.example.designpattern.createType.FactoryPattern.learn.FactoryConcrete;
-import com.example.designpattern.createType.FactoryPattern.learn.Product;
-import com.example.designpattern.createType.FactoryPatternAbstract.FactoryAbstract;
-import com.example.designpattern.createType.FactoryPatternAbstract.FactoryConcrete1;
-import com.example.designpattern.createType.FactoryPatternAbstract.ProductAAbstract;
-import com.example.designpattern.createType.FactoryPatternAbstract.ProductBAbstract;
-import com.example.designpattern.actionType.StragetyPattern.learn.BusStrategy;
-import com.example.designpattern.actionType.StragetyPattern.learn.CarStrategy;
-import com.example.designpattern.actionType.StragetyPattern.learn.TrafficCalculator;
-import com.example.designpattern.structureType.adapterPattern.example.AudioPlayer;
-import com.example.designpattern.structureType.adapterPattern.learn.VoltAdapter;
-import com.example.designpattern.structureType.bridgePattern.example.CircleBridge;
-import com.example.designpattern.structureType.bridgePattern.example.GreenCircle;
-import com.example.designpattern.structureType.bridgePattern.example.RedCircle;
-import com.example.designpattern.structureType.bridgePattern.example.ShapeBridge;
-import com.example.designpattern.actionType.chainPattern.learn.ConcreteHandler1;
-import com.example.designpattern.actionType.chainPattern.learn.ConcreteHandler2;
-import com.example.designpattern.actionType.commandPattern.exam.Broker;
-import com.example.designpattern.actionType.commandPattern.exam.BuyStock;
-import com.example.designpattern.actionType.commandPattern.exam.ShellStock;
-import com.example.designpattern.actionType.commandPattern.exam.Stock;
-import com.example.designpattern.actionType.commandPattern.learn.Command;
-import com.example.designpattern.actionType.commandPattern.learn.ConcreteCommand;
-import com.example.designpattern.actionType.commandPattern.learn.Invoker;
-import com.example.designpattern.actionType.commandPattern.learn.Receiver;
-import com.example.designpattern.structureType.compositePattern.Composite;
-import com.example.designpattern.structureType.compositePattern.Leaf;
-import com.example.designpattern.structureType.decoratorPattern.example.Circle;
-import com.example.designpattern.structureType.decoratorPattern.example.Rectangle;
-import com.example.designpattern.structureType.decoratorPattern.example.RedShapedDecorator;
-import com.example.designpattern.structureType.decoratorPattern.example.Shape;
-import com.example.designpattern.structureType.decoratorPattern.example.ShapeDecorator;
-import com.example.designpattern.structureType.decoratorPattern.learn.Component;
-import com.example.designpattern.structureType.decoratorPattern.learn.ConcreteComponent;
-import com.example.designpattern.structureType.decoratorPattern.learn.ConcreteDecoratorA;
-import com.example.designpattern.structureType.decoratorPattern.learn.Decorator;
-import com.example.designpattern.structureType.facedPattern.MobilePhone;
-import com.example.designpattern.structureType.flyweightPattern.Ticket;
-import com.example.designpattern.structureType.flyweightPattern.TicketFactory;
-import com.example.designpattern.actionType.interpreterPattern.Expression;
-import com.example.designpattern.actionType.interpreterPattern.InterpreterPattern;
-import com.example.designpattern.actionType.mediatorPattern.exam.User;
-import com.example.designpattern.actionType.memotoPattern.CallOfDuty;
-import com.example.designpattern.actionType.memotoPattern.Careteker;
-import com.example.designpattern.actionType.observerPattern.Coder;
-import com.example.designpattern.actionType.observerPattern.DevTechFrontier;
-import com.example.designpattern.structureType.proxyPattern.ProxySubject;
-import com.example.designpattern.structureType.proxyPattern.RealSubject;
-import com.example.designpattern.actionType.statePattern.TvController;
-import com.example.designpattern.actionType.templatePattern.AbstractComputer;
-import com.example.designpattern.actionType.templatePattern.CoderComputer;
-import com.example.designpattern.actionType.templatePattern.MilitaryComputer;
-import com.example.designpattern.actionType.visitorPattern.learn.BusinessReport;
-import com.example.designpattern.actionType.visitorPattern.learn.CEOVisitor;
-import com.example.designpattern.actionType.visitorPattern.learn.CTOVisitor;
+import com.example.designpattern.ActionType.chainPattern.okHttpChain.InterceptorOne;
+import com.example.designpattern.ActionType.chainPattern.okHttpChain.InterceptorTwo;
+import com.example.designpattern.ActionType.chainPattern.okHttpChain.RealInterceptorChain;
+import com.example.designpattern.CreateType.BuilderPattern.example.TodayFool;
+import com.example.designpattern.CreateType.BuilderPattern.learn.Builder;
+import com.example.designpattern.CreateType.BuilderPattern.learn.Director;
+import com.example.designpattern.CreateType.BuilderPattern.learn.MacBuilder;
+import com.example.designpattern.CreateType.ClonePattern.WordDocument;
+import com.example.designpattern.CreateType.FactoryPattern.example.Animal;
+import com.example.designpattern.CreateType.FactoryPattern.example.FactoryAnimal;
+import com.example.designpattern.CreateType.FactoryPattern.example.FactoryAnimalConcrete;
+import com.example.designpattern.CreateType.FactoryPattern.learn.Factory;
+import com.example.designpattern.CreateType.FactoryPattern.learn.FactoryConcrete;
+import com.example.designpattern.CreateType.FactoryPattern.learn.Product;
+import com.example.designpattern.CreateType.FactoryPatternAbstract.FactoryAbstract;
+import com.example.designpattern.CreateType.FactoryPatternAbstract.FactoryConcrete1;
+import com.example.designpattern.CreateType.FactoryPatternAbstract.ProductAAbstract;
+import com.example.designpattern.CreateType.FactoryPatternAbstract.ProductBAbstract;
+import com.example.designpattern.ActionType.StragetyPattern.learn.BusStrategy;
+import com.example.designpattern.ActionType.StragetyPattern.learn.CarStrategy;
+import com.example.designpattern.ActionType.StragetyPattern.learn.TrafficCalculator;
+import com.example.designpattern.StructureType.adapterPattern.example.AudioPlayer;
+import com.example.designpattern.StructureType.adapterPattern.learn.VoltAdapter;
+import com.example.designpattern.StructureType.bridgePattern.example.CircleBridge;
+import com.example.designpattern.StructureType.bridgePattern.example.GreenCircle;
+import com.example.designpattern.StructureType.bridgePattern.example.RedCircle;
+import com.example.designpattern.StructureType.bridgePattern.example.ShapeBridge;
+import com.example.designpattern.ActionType.chainPattern.learn.ConcreteHandler1;
+import com.example.designpattern.ActionType.chainPattern.learn.ConcreteHandler2;
+import com.example.designpattern.ActionType.commandPattern.exam.Broker;
+import com.example.designpattern.ActionType.commandPattern.exam.BuyStock;
+import com.example.designpattern.ActionType.commandPattern.exam.ShellStock;
+import com.example.designpattern.ActionType.commandPattern.exam.Stock;
+import com.example.designpattern.ActionType.commandPattern.learn.Command;
+import com.example.designpattern.ActionType.commandPattern.learn.ConcreteCommand;
+import com.example.designpattern.ActionType.commandPattern.learn.Invoker;
+import com.example.designpattern.ActionType.commandPattern.learn.Receiver;
+import com.example.designpattern.StructureType.compositePattern.Composite;
+import com.example.designpattern.StructureType.compositePattern.Leaf;
+import com.example.designpattern.StructureType.decoratorPattern.example.Circle;
+import com.example.designpattern.StructureType.decoratorPattern.example.Rectangle;
+import com.example.designpattern.StructureType.decoratorPattern.example.RedShapedDecorator;
+import com.example.designpattern.StructureType.decoratorPattern.example.Shape;
+import com.example.designpattern.StructureType.decoratorPattern.example.ShapeDecorator;
+import com.example.designpattern.StructureType.decoratorPattern.learn.Component;
+import com.example.designpattern.StructureType.decoratorPattern.learn.ConcreteComponent;
+import com.example.designpattern.StructureType.decoratorPattern.learn.ConcreteDecoratorA;
+import com.example.designpattern.StructureType.decoratorPattern.learn.Decorator;
+import com.example.designpattern.StructureType.facedPattern.MobilePhone;
+import com.example.designpattern.StructureType.flyweightPattern.Ticket;
+import com.example.designpattern.StructureType.flyweightPattern.TicketFactory;
+import com.example.designpattern.ActionType.interpreterPattern.Expression;
+import com.example.designpattern.ActionType.interpreterPattern.InterpreterPattern;
+import com.example.designpattern.ActionType.mediatorPattern.exam.User;
+import com.example.designpattern.ActionType.memotoPattern.CallOfDuty;
+import com.example.designpattern.ActionType.memotoPattern.Careteker;
+import com.example.designpattern.ActionType.observerPattern.Coder;
+import com.example.designpattern.ActionType.observerPattern.DevTechFrontier;
+import com.example.designpattern.StructureType.proxyPattern.ProxySubject;
+import com.example.designpattern.StructureType.proxyPattern.RealSubject;
+import com.example.designpattern.ActionType.statePattern.TvController;
+import com.example.designpattern.ActionType.templatePattern.AbstractComputer;
+import com.example.designpattern.ActionType.templatePattern.CoderComputer;
+import com.example.designpattern.ActionType.templatePattern.MilitaryComputer;
+import com.example.designpattern.ActionType.visitorPattern.learn.BusinessReport;
+import com.example.designpattern.ActionType.visitorPattern.learn.CEOVisitor;
+import com.example.designpattern.ActionType.visitorPattern.learn.CTOVisitor;
 import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -165,6 +166,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button bridge_pattern;
     @BindView(R.id.bridge_pattern_example)
     Button bridge_pattern_example;
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -340,10 +347,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
             case R.id.chain_pattern_example : {
                 RealInterceptorChain leaderManager = new RealInterceptorChain();//传递下发任务可执行等级
-                leaderManager.addLeaders(new InterceptorOne());
-                leaderManager.addLeaders(new InterceptorTwo());
+                leaderManager.addInterceptor(new InterceptorOne());
+                leaderManager.addInterceptor(new InterceptorTwo());
                 String result = leaderManager.proceed("开始请求了");//开始执行
-                Log.d("__OKHttp-result","最后的结果是："+result);
+                Log.d("最后的结果是：",result);
                 break;
             }
             case R.id.interpreter_pattern : {

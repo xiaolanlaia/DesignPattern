@@ -1,4 +1,4 @@
-package com.example.designpattern.actionType.templatePattern;
+package com.example.designpattern.ActionType.templatePattern;
 
 import android.util.Log;
 

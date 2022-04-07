@@ -1,4 +1,4 @@
-package com.example.designpattern.createType.FactoryPatternAbstract;
+package com.example.designpattern.CreateType.FactoryPatternAbstract;
 
 public abstract class FactoryAbstract {
     public abstract ProductAAbstract createProductA();

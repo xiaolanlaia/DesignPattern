@@ -1,4 +1,4 @@
-package com.example.designpattern.actionType.statePattern;
+package com.example.designpattern.ActionType.statePattern;
 
 public interface TvState {
     void nextChannel();

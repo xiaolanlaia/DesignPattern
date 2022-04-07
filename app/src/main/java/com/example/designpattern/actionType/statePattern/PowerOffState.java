@@ -1,4 +1,4 @@
-package com.example.designpattern.actionType.statePattern;
+package com.example.designpattern.ActionType.statePattern;
 
 public class PowerOffState implements TvState {
     @Override

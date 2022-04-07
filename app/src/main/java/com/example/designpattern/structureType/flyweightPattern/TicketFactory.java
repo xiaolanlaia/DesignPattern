@@ -1,4 +1,4 @@
-package com.example.designpattern.structureType.flyweightPattern;
+package com.example.designpattern.StructureType.flyweightPattern;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

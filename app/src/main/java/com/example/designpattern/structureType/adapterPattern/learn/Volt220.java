@@ -1,4 +1,4 @@
-package com.example.designpattern.structureType.adapterPattern.learn;
+package com.example.designpattern.StructureType.adapterPattern.learn;
 
 public class Volt220 {
     public int getVolt220(){

@@ -1,4 +1,4 @@
-package com.example.designpattern.structureType.facedPattern;
+package com.example.designpattern.StructureType.facedPattern;
 
 public interface Camera {
     void open();

@@ -1,4 +1,4 @@
-package com.example.designpattern.actionType.chainPattern.learn;
+package com.example.designpattern.ActionType.chainPattern.learn;
 
 import android.util.Log;
 

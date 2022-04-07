@@ -1,4 +1,4 @@
-package com.example.designpattern.structureType.compositePattern;
+package com.example.designpattern.StructureType.compositePattern;
 
 public abstract class Component {
     protected String name;

@@ -14,8 +14,4 @@
 .cxx
 local.properties
 .idea/
-build.gradle
-gradle.properties
-app/proguard-rules.pro
 gradle/
-app/src/test/

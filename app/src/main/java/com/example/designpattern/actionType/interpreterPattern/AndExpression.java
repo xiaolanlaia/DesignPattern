@@ -1,4 +1,4 @@
-package com.example.designpattern.actionType.interpreterPattern;
+package com.example.designpattern.ActionType.interpreterPattern;
 
 public class AndExpression implements Expression{
     private Expression expression1;

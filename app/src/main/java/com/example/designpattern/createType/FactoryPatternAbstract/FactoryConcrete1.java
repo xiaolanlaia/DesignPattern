@@ -1,4 +1,4 @@
-package com.example.designpattern.createType.FactoryPatternAbstract;
+package com.example.designpattern.CreateType.FactoryPatternAbstract;
 
 public class FactoryConcrete1 extends FactoryAbstract{
     @Override

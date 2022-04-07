@@ -1,4 +1,4 @@
-package com.example.designpattern.structureType.compositePattern;
+package com.example.designpattern.StructureType.compositePattern;
 
 import android.util.Log;
 

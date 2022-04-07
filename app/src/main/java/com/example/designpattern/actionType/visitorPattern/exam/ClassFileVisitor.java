@@ -1,4 +1,4 @@
-package com.example.designpattern.actionType.visitorPattern.exam;
+package com.example.designpattern.ActionType.visitorPattern.exam;
 
 import android.util.Log;
 
