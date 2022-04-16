@@ -1,4 +1,4 @@
-package com.example.designpattern.ActionType.interpreterPattern;
+package com.example.designpattern.actionType.interpreterPattern;
 
 public class TerminalExpression implements Expression {
 

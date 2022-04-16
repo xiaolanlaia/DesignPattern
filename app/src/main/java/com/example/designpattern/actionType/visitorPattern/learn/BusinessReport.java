@@ -1,4 +1,4 @@
-package com.example.designpattern.ActionType.visitorPattern.learn;
+package com.example.designpattern.actionType.visitorPattern.learn;
 
 import java.util.LinkedList;
 import java.util.List;

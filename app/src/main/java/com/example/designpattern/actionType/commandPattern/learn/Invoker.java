@@ -1,4 +1,4 @@
-package com.example.designpattern.ActionType.commandPattern.learn;
+package com.example.designpattern.actionType.commandPattern.learn;
 
 public class Invoker {
     private Command command;

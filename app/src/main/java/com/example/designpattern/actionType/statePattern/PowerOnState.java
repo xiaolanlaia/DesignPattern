@@ -1,4 +1,4 @@
-package com.example.designpattern.ActionType.statePattern;
+package com.example.designpattern.actionType.statePattern;
 
 import android.util.Log;
 

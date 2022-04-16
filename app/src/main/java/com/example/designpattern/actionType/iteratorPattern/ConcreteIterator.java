@@ -1,4 +1,4 @@
-package com.example.designpattern.ActionType.iteratorPattern;
+package com.example.designpattern.actionType.iteratorPattern;
 
 import java.util.ArrayList;
 import java.util.List;

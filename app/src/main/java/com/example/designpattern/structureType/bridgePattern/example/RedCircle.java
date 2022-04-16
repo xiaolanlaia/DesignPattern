@@ -1,4 +1,4 @@
-package com.example.designpattern.StructureType.bridgePattern.example;
+package com.example.designpattern.structureType.bridgePattern.example;
 
 public class RedCircle implements DrawAPI {
     @Override

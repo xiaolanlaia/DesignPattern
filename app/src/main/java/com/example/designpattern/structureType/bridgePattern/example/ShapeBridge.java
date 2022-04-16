@@ -1,4 +1,4 @@
-package com.example.designpattern.StructureType.bridgePattern.example;
+package com.example.designpattern.structureType.bridgePattern.example;
 
 public abstract class ShapeBridge {
     protected DrawAPI drawAPI;

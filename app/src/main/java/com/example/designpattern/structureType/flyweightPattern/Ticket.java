@@ -1,4 +1,4 @@
-package com.example.designpattern.StructureType.flyweightPattern;
+package com.example.designpattern.structureType.flyweightPattern;
 
 public interface Ticket {
     void showTicketInfo(String bunk);

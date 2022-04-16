@@ -1,4 +1,4 @@
-package com.example.designpattern.CreateType.FactoryPattern.learn;
+package com.example.designpattern.createType.FactoryPattern.learn;
 
 import android.util.Log;
 

@@ -1,4 +1,4 @@
-package com.example.designpattern.CreateType.ClonePattern;
+package com.example.designpattern.createType.ClonePattern;
 
 import android.util.Log;
 

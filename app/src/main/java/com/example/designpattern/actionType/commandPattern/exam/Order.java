@@ -1,4 +1,4 @@
-package com.example.designpattern.ActionType.commandPattern.exam;
+package com.example.designpattern.actionType.commandPattern.exam;
 
 public interface Order {
     void execute();

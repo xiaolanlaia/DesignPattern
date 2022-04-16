@@ -1,4 +1,4 @@
-package com.example.designpattern.ActionType.commandPattern.exam;
+package com.example.designpattern.actionType.commandPattern.exam;
 
 import java.util.ArrayList;
 import java.util.List;

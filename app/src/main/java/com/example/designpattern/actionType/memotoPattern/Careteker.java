@@ -1,4 +1,4 @@
-package com.example.designpattern.ActionType.memotoPattern;
+package com.example.designpattern.actionType.memotoPattern;
 
 public class Careteker {
     Memoto memoto;

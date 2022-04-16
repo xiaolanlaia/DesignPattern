@@ -1,4 +1,4 @@
-package com.example.designpattern.StructureType.adapterPattern.example;
+package com.example.designpattern.structureType.adapterPattern.example;
 
 public class MediaAdapter implements MediaPlayer {
 

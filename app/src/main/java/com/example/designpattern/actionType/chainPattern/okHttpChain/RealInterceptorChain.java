@@ -1,4 +1,4 @@
-package com.example.designpattern.ActionType.chainPattern.okHttpChain;
+package com.example.designpattern.actionType.chainPattern.okHttpChain;
 
 import java.util.ArrayList;
 

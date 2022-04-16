@@ -1,4 +1,4 @@
-package com.example.designpattern.ActionType.chainPattern.learn;
+package com.example.designpattern.actionType.chainPattern.learn;
 
 public abstract class Handler {
     public Handler successor;

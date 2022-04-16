@@ -1,4 +1,4 @@
-package com.example.designpattern.CreateType.FactoryPatternAbstract;
+package com.example.designpattern.createType.FactoryPatternAbstract;
 
 import android.util.Log;
 

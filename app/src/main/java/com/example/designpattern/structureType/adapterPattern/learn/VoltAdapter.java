@@ -1,4 +1,4 @@
-package com.example.designpattern.StructureType.adapterPattern.learn;
+package com.example.designpattern.structureType.adapterPattern.learn;
 
 public class VoltAdapter extends Volt220 implements FiveVolt{
     @Override

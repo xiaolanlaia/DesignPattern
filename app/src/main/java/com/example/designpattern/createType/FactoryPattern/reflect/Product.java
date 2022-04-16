@@ -1,4 +1,4 @@
-package com.example.designpattern.CreateType.FactoryPattern.reflect;
+package com.example.designpattern.createType.FactoryPattern.reflect;
 
 public class Product {
     private String name;

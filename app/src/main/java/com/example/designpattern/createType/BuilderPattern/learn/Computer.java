@@ -1,4 +1,4 @@
-package com.example.designpattern.CreateType.BuilderPattern.learn;
+package com.example.designpattern.createType.BuilderPattern.learn;
 
 public abstract class Computer {
     protected String mBoard;
